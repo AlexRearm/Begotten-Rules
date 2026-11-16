@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="b090ddcaa42" name="Орден Привратников" gameSystemId="b778f9f539d" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" revision="1" battleScribeVersion="2.03" authorName="AlexRearm" library="false">
+<comment>Защитники Привраты. Тестовая фракция — юниты сгенерированы для проверки.</comment>
+<selectionEntries>
+<selectionEntry id="b8ba4876a6e" name="Стражи Привраты (тест)" type="unit" hidden="false" collective="false" import="true" publicationId="pub-main">
+<categoryLinks><categoryLink id="b4fb552828c" name="troops" targetId="b7a701ef2c8" primary="true" hidden="false"/></categoryLinks>
+<profiles>
+<profile id="b4d81c409da" name="Страж Привраты" hidden="false" typeId="b5e394dae2d" typeName="Unit"><characteristics><characteristic typeId="bc84dc8ca3a" name="M">6&quot;</characteristic><characteristic typeId="b52b0fc3542" name="WS">3+</characteristic><characteristic typeId="b445cb7e07a" name="BS">4+</characteristic><characteristic typeId="ba21cb80ae1" name="T">4</characteristic><characteristic typeId="b6ba7776c9e" name="W">2</characteristic><characteristic typeId="bd23daa50dd" name="Sv">4+</characteristic><characteristic typeId="be4e057a66c" name="San">7</characteristic></characteristics></profile>
+<profile id="bfd6ba3910c" name="Меч" hidden="false" typeId="b34e75c9b31" typeName="Weapon"><characteristics><characteristic typeId="b6204806ba1" name="S">4</characteristic><characteristic typeId="b964e6f66dc" name="AP">-1</characteristic><characteristic typeId="bbce2d64412" name="A">2</characteristic><characteristic typeId="b3c8c90cbb6" name="D">1</characteristic><characteristic typeId="bacaa5de25a" name="Abilities">-</characteristic></characteristics></profile>
+<profile id="b2d3a767b3f" name="Щит" hidden="false" typeId="b34e75c9b31" typeName="Weapon"><characteristics><characteristic typeId="b6204806ba1" name="S">-</characteristic><characteristic typeId="b964e6f66dc" name="AP">-</characteristic><characteristic typeId="bbce2d64412" name="A">-</characteristic><characteristic typeId="b3c8c90cbb6" name="D">-</characteristic><characteristic typeId="bacaa5de25a" name="Abilities">+1 к спас-броску против стрельбы</characteristic></characteristics></profile>
+<profile id="b42be42791e" name="Пика" hidden="false" typeId="b34e75c9b31" typeName="Weapon"><characteristics><characteristic typeId="b6204806ba1" name="S">5</characteristic><characteristic typeId="b964e6f66dc" name="AP">-2</characteristic><characteristic typeId="bbce2d64412" name="A">2</characteristic><characteristic typeId="b3c8c90cbb6" name="D">1</characteristic><characteristic typeId="bacaa5de25a" name="Abilities">Смертельные попадания 6+</characteristic></characteristics></profile>
+<profile id="b4c77d4404d" name="Строй" hidden="false" typeId="be701cd3092" typeName="Ability"><characteristics><characteristic typeId="b01dc053d6d" name="Description">Пока в отряде не меньше 5 моделей, отряд получает +1 к броскам на мораль.</characteristic></characteristics></profile>
+</profiles>
+<selectionEntryGroups>
+<selectionEntryGroup id="b32df5a7f96" name="Состав отряда" hidden="false" collective="false" defaultSelectionEntryId="">
+<constraints><constraint id="b773853a510" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min"/><constraint id="b20f4a1b20c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max"/></constraints>
+<selectionEntries>
+<selectionEntry id="b3bca7dff6a" name="Страж Привраты" type="model" hidden="false" collective="true">
+<constraints><constraint id="b456a108425" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min"/><constraint id="b691a553b4e" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max"/></constraints>
+<costs><cost typeId="b8c9a70dc1e" name="pts" value="12"/></costs>
+</selectionEntry>
+</selectionEntries></selectionEntryGroup>
+</selectionEntryGroups>
+<selectionEntries>
+<selectionEntry id="bab2de9b76d" name="Один воин на каждые 5 моделей может заменить меч на пику" type="upgrade" hidden="false" collective="false">
+<constraints><constraint id="be6a4059799" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min"/><constraint id="b0dd94b4631" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max"/></constraints>
+<modifiers><modifier type="increment" field="b0dd94b4631" value="1"><conditions><condition field="selections" scope="parent" targetId="b3bca7dff6a" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="atLeast"/></conditions></modifier><modifier type="increment" field="b0dd94b4631" value="1"><conditions><condition field="selections" scope="parent" targetId="b3bca7dff6a" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="atLeast"/></conditions></modifier></modifiers>
+<costs><cost typeId="b8c9a70dc1e" name="pts" value="5"/></costs>
+</selectionEntry>
+</selectionEntries>
+<rules><rule id="b1dc43e1136" name="Кейворды" hidden="false"><description>Пехота, Приврата, Адисса</description></rule></rules>
+<rules><rule id="b3681601647" name="Описание" hidden="false"><description>Рядовые защитники ворот Адиссы, держащие строй пикой и щитом.</description></rule></rules>
+<costs><cost typeId="b8c9a70dc1e" name="pts" value="60"/></costs>
+</selectionEntry>
+<selectionEntry id="b7d87aafda4" name="Гранд-Инквизитор (тест)" type="unit" hidden="false" collective="false" import="true" publicationId="pub-main">
+<categoryLinks><categoryLink id="bc08d135502" name="hq" targetId="bc34a5cd870" primary="true" hidden="false"/></categoryLinks>
+<profiles>
+<profile id="b8dfab58e1f" name="Гранд-Инквизитор" hidden="false" typeId="b5e394dae2d" typeName="Unit"><characteristics><characteristic typeId="bc84dc8ca3a" name="M">6&quot;</characteristic><characteristic typeId="b52b0fc3542" name="WS">2+</characteristic><characteristic typeId="b445cb7e07a" name="BS">3+</characteristic><characteristic typeId="ba21cb80ae1" name="T">4</characteristic><characteristic typeId="b6ba7776c9e" name="W">5</characteristic><characteristic typeId="bd23daa50dd" name="Sv">3+</characteristic><characteristic typeId="be4e057a66c" name="San">9</characteristic></characteristics></profile>
+<profile id="bb4e0d9446c" name="Тяжёлая булава" hidden="false" typeId="b34e75c9b31" typeName="Weapon"><characteristics><characteristic typeId="b6204806ba1" name="S">6</characteristic><characteristic typeId="b964e6f66dc" name="AP">-2</characteristic><characteristic typeId="bbce2d64412" name="A">4</characteristic><characteristic typeId="b3c8c90cbb6" name="D">2</characteristic><characteristic typeId="bacaa5de25a" name="Abilities">Сокрушительный удар</characteristic></characteristics></profile>
+<profile id="b92deb6266d" name="Аура Ордена" hidden="false" typeId="be701cd3092" typeName="Ability"><characteristics><characteristic typeId="b01dc053d6d" name="Description">Дружественные отряды Ордена Привратников в 6&quot; перебрасывают проваленные броски морали.</characteristic></characteristics></profile>
+</profiles>
+<selectionEntryGroups>
+<selectionEntryGroup id="b6f5093a010" name="Состав отряда" hidden="false" collective="false" defaultSelectionEntryId="">
+<constraints><constraint id="b773853a510" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min"/><constraint id="b20f4a1b20c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max"/></constraints>
+<selectionEntries>
+<selectionEntry id="b9ba3063327" name="Гранд-Инквизитор" type="model" hidden="false" collective="true">
+<constraints><constraint id="b773853a510" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min"/><constraint id="b20f4a1b20c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max"/></constraints>
+<costs><cost typeId="b8c9a70dc1e" name="pts" value="95"/></costs>
+</selectionEntry>
+</selectionEntries></selectionEntryGroup>
+</selectionEntryGroups>
+<rules><rule id="bbd1adfc115" name="Кейворды" hidden="false"><description>Персонаж, Приврата, Инквизиция</description></rule></rules>
+<rules><rule id="b2837dcd014" name="Описание" hidden="false"><description>Верховный судья Ордена, несущий очищение огнём и словом.</description></rule></rules>
+<costs><cost typeId="b8c9a70dc1e" name="pts" value="95"/></costs>
+</selectionEntry>
+</selectionEntries>
+</catalogue>

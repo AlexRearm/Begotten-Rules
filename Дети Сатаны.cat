@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="b117ba76a84" name="Дети Сатаны" gameSystemId="b778f9f539d" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" revision="1" battleScribeVersion="2.03" authorName="AlexRearm" library="false">
+<comment>Культисты и адские латы. Тестовая фракция — юниты сгенерированы для проверки.</comment>
+<selectionEntries>
+<selectionEntry id="b7c841f2e6a" name="Культисты Ада (тест)" type="unit" hidden="false" collective="false" import="true" publicationId="pub-main">
+<categoryLinks><categoryLink id="bab771e3683" name="troops" targetId="b7a701ef2c8" primary="true" hidden="false"/></categoryLinks>
+<profiles>
+<profile id="baaf1e25883" name="Культист" hidden="false" typeId="b5e394dae2d" typeName="Unit"><characteristics><characteristic typeId="bc84dc8ca3a" name="M">6&quot;</characteristic><characteristic typeId="b52b0fc3542" name="WS">4+</characteristic><characteristic typeId="b445cb7e07a" name="BS">5+</characteristic><characteristic typeId="ba21cb80ae1" name="T">3</characteristic><characteristic typeId="b6ba7776c9e" name="W">1</characteristic><characteristic typeId="bd23daa50dd" name="Sv">6+</characteristic><characteristic typeId="be4e057a66c" name="San">5</characteristic></characteristics></profile>
+<profile id="b9b1edcb1a4" name="Когти и ножи" hidden="false" typeId="b34e75c9b31" typeName="Weapon"><characteristics><characteristic typeId="b6204806ba1" name="S">3</characteristic><characteristic typeId="b964e6f66dc" name="AP">0</characteristic><characteristic typeId="bbce2d64412" name="A">2</characteristic><characteristic typeId="b3c8c90cbb6" name="D">1</characteristic><characteristic typeId="bacaa5de25a" name="Abilities">-</characteristic></characteristics></profile>
+<profile id="bc9bfe85e0d" name="Факел" hidden="false" typeId="b34e75c9b31" typeName="Weapon"><characteristics><characteristic typeId="b6204806ba1" name="S">4</characteristic><characteristic typeId="b964e6f66dc" name="AP">0</characteristic><characteristic typeId="bbce2d64412" name="A">1</characteristic><characteristic typeId="b3c8c90cbb6" name="D">1</characteristic><characteristic typeId="bacaa5de25a" name="Abilities">Поджог</characteristic></characteristics></profile>
+<profile id="b6b8096302d" name="Фанатизм" hidden="false" typeId="be701cd3092" typeName="Ability"><characteristics><characteristic typeId="b01dc053d6d" name="Description">Отряд автоматически проходит проверки морали, если в нём осталось не менее 10 моделей.</characteristic></characteristics></profile>
+</profiles>
+<selectionEntryGroups>
+<selectionEntryGroup id="beec374f7a5" name="Состав отряда" hidden="false" collective="false" defaultSelectionEntryId="">
+<constraints><constraint id="b773853a510" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min"/><constraint id="b20f4a1b20c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max"/></constraints>
+<selectionEntries>
+<selectionEntry id="b3850259f40" name="Культист" type="model" hidden="false" collective="true">
+<constraints><constraint id="b1ea4d0b8b3" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min"/><constraint id="b3477e5c35a" field="selections" scope="parent" value="20" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max"/></constraints>
+<costs><cost typeId="b8c9a70dc1e" name="pts" value="5"/></costs>
+</selectionEntry>
+</selectionEntries></selectionEntryGroup>
+</selectionEntryGroups>
+<selectionEntries>
+<selectionEntry id="b4e5b2bd366" name="Один культист на каждые 6 моделей может взять факел" type="upgrade" hidden="false" collective="false">
+<constraints><constraint id="be6a4059799" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min"/><constraint id="ba48084b627" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max"/></constraints>
+<modifiers><modifier type="increment" field="ba48084b627" value="1"><conditions><condition field="selections" scope="parent" targetId="b3850259f40" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="atLeast"/></conditions></modifier><modifier type="increment" field="ba48084b627" value="1"><conditions><condition field="selections" scope="parent" targetId="b3850259f40" value="12" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="atLeast"/></conditions></modifier><modifier type="increment" field="ba48084b627" value="1"><conditions><condition field="selections" scope="parent" targetId="b3850259f40" value="18" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="atLeast"/></conditions></modifier></modifiers>
+<costs><cost typeId="b8c9a70dc1e" name="pts" value="3"/></costs>
+</selectionEntry>
+</selectionEntries>
+<rules><rule id="b1286a902e2" name="Кейворды" hidden="false"><description>Пехота, Культ, Демонопоклонники</description></rule></rules>
+<rules><rule id="b36c80db2fb" name="Описание" hidden="false"><description>Обезумевшие слуги тёмного покровителя, идущие в бой толпой.</description></rule></rules>
+<costs><cost typeId="b8c9a70dc1e" name="pts" value="50"/></costs>
+</selectionEntry>
+</selectionEntries>
+</catalogue>

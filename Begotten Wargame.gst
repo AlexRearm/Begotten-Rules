@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gameSystem id="b778f9f539d" name="Begotten Wargame" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" revision="1" battleScribeVersion="2.03" authorName="AlexRearm">
+<publications><publication id="pub-main" name="Begotten Wargame Rules" shortName="BWG" publisher=""/></publications>
+<costTypes><costType id="b8c9a70dc1e" name="pts" defaultCostLimit="0" hidden="false"/></costTypes>
+<profileTypes>
+<profileType id="b5e394dae2d" name="Unit"><characteristicTypes><characteristicType id="bc84dc8ca3a" name="M"/><characteristicType id="b52b0fc3542" name="WS"/><characteristicType id="b445cb7e07a" name="BS"/><characteristicType id="ba21cb80ae1" name="T"/><characteristicType id="b6ba7776c9e" name="W"/><characteristicType id="bd23daa50dd" name="Sv"/><characteristicType id="be4e057a66c" name="San"/></characteristicTypes></profileType>
+<profileType id="b34e75c9b31" name="Weapon"><characteristicTypes><characteristicType id="b6204806ba1" name="S"/><characteristicType id="b964e6f66dc" name="AP"/><characteristicType id="bbce2d64412" name="A"/><characteristicType id="b3c8c90cbb6" name="D"/><characteristicType id="bacaa5de25a" name="Abilities"/></characteristicTypes></profileType>
+<profileType id="be701cd3092" name="Ability"><characteristicTypes><characteristicType id="b01dc053d6d" name="Description"/></characteristicTypes></profileType>
+</profileTypes>
+<categoryEntries><categoryEntry id="bc34a5cd870" name="Командир" hidden="false"/><categoryEntry id="b7a701ef2c8" name="Основные" hidden="false"/><categoryEntry id="b827f926cd0" name="Элита" hidden="false"/><categoryEntry id="b43ebd0bade" name="Поддержка" hidden="false"/></categoryEntries>
+<forceEntries><forceEntry id="bae254d63f2" name="Армия" hidden="false"><categoryLinks><categoryLink id="b1e0369e012" name="Командир" targetId="bc34a5cd870" primary="false" hidden="false"/><categoryLink id="bdf68d2f1f0" name="Основные" targetId="b7a701ef2c8" primary="true" hidden="false"/><categoryLink id="bb442351dca" name="Элита" targetId="b827f926cd0" primary="false" hidden="false"/><categoryLink id="bc7399bb9d5" name="Поддержка" targetId="b43ebd0bade" primary="false" hidden="false"/></categoryLinks><constraints><constraint id="b50c87bab22" field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min"/></constraints></forceEntry></forceEntries>
+</gameSystem>
